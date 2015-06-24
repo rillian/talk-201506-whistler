@@ -128,7 +128,9 @@ if CONFIG['MOZ_RUST']:
 Rust can target the C ABI. In C++ code declare:
 
 ```C
+#ifdef MOZ_RUST
 extern "C" uint8_t* test_rust();
+#endif
 ```
 
 In rust code implement:
