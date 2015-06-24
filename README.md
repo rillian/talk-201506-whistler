@@ -151,4 +151,7 @@ Tracking bug https://bugzil.la/oxidation
 
 MDN https://developer.mozilla.org/en-US/Firefox/Building_Firefox_with_Rust_code
 
+rustdoc https://doc.rust-lang.org/stable/book/
+
 IRC #rust is full of helpful people
+
