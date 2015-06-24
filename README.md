@@ -111,7 +111,7 @@ Finished running GTest tests.
 
 ---
 
-# Add code conditionally
+# Add code
 
 In moz.build:
 
