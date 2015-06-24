@@ -72,11 +72,15 @@ Rust is ready to roll.
 
 In mozconfig:
 
-- ac_add_options --enable-rust
+```sh
+ac_add_options --enable-rust
+```
 
 On Mac:
 
-- ac_add_options --enable-macos-target=10.7
+```sh
+ac_add_options --enable-macos-target=10.7
+```
 
 ---
 
