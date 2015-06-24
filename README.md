@@ -21,13 +21,19 @@ trouble with races, deadlocks, inefficiency.
 
 ---
 
-Rewrote the stack several times over the years. Most recently
-with Bobby Holly's C++ MediaPromise library.
+# Why not?
 
 We've been using the stagefright mp4 demuxer (from Android).
 Found ~6 security vulnerabilities this year alone.
 
 This is the problem rust was designed to solve.
+
+---
+
+# Rust in Gecko
+
+.center[![Rust gear logo](rust-logo-blk.svg)]
+.center[![Gecko globe logo](boot-to-gecko-logo.png)]
 
 ---
 
