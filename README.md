@@ -84,6 +84,33 @@ ac_add_options --enable-macos-target=10.7
 
 ---
 
+# Verify
+
+```gtest
+$ ./mach gtest rust.*
+ 0:00.26 /usr/bin/make -C testing/gtest -j8 -s -w gtest
+ [...]
+Running GTest tests...
+Note: Google Test filter = rust.*
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from rust
+[ RUN      ] rust.MP4MetadataEmpty
+[       OK ] rust.MP4MetadataEmpty (0 ms)
+[ RUN      ] rust.MP4Metadata
+[       OK ] rust.MP4Metadata (0 ms)
+[ RUN      ] rust.CallFromCpp
+[       OK ] rust.CallFromCpp (0 ms)
+[----------] 3 tests from rust (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 3 tests.
+Finished running GTest tests.
+```
+
+---
+
 # Add code conditionally
 
 In moz.build:
@@ -121,3 +148,5 @@ https://github.com/rillian/rust-ffi/
 Tracking bug https://bugzil.la/oxidation
 
 MDN https://developer.mozilla.org/en-US/Firefox/Building_Firefox_with_Rust_code
+
+IRC #rust is full of helpful people
