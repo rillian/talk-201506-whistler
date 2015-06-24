@@ -4,6 +4,12 @@ In the media playback team we've been working on writing parser code in the new
 rust programming language for safety. I'll talk about what this looks like, why
 it's important, and how other contributors can try it too.
 
+Ralph Giles
+2015 June 24
+Whistler, Canada
+
+---
+
 # Why
 
 We don't know how to write safe, concurrent C++ code.
@@ -13,6 +19,8 @@ Media playback is cpu-intensive, must juggle many resources.
 Seems ideal for thread parallelism, but we've had lots of
 trouble with races, deadlocks, inefficiency.
 
+---
+
 Rewrote the stack several times over the years. Most recently
 with Bobby Holly's C++ MediaPromise library.
 
@@ -20,6 +28,8 @@ We've been using the stagefright mp4 demuxer (from Android).
 Found ~6 security vulnerabilities this year alone.
 
 This is the problem rust was designed to solve.
+
+---
 
 # How to use rust in gecko.
 
@@ -33,6 +43,8 @@ Install rust compiler:
 On Mac:
 
 - ac_add_options --enable-macos-target=10.7
+
+---
 
 FFI example.
 
